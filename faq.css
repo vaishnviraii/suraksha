@@ -1,0 +1,110 @@
+* {
+    overflow-x: hidden;
+}
+
+footer {
+    width: 300vh;
+    height: 200px;
+    background-color: gray;
+}
+
+.nav {
+    width: 210vh;
+    height: 6vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+
+    justify-content: flex-end;
+    overflow: hidden;
+    /* background-color: orangered; */
+}
+
+.nav ul {
+    list-style: none;
+}
+
+.nav li {
+    display: inline-block;
+    padding: 0%;
+    margin-left: 20px;
+}
+
+.nav li a {
+    color: black;
+    font-weight: 500;
+
+}
+
+.nav header {
+    position: absolute;
+    left: 8%;
+    font-weight: bolder;
+    z-index: 10000;
+}
+
+.search {
+    width: 100%;
+    height: 80px;
+    background-color: #dd7700;
+    margin-top: 100px;
+    text-align: center;
+    padding-top: 9px;
+}
+
+.faq-section {
+    padding: 4em 2em;
+}
+
+.faq {
+    list-style: none;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.faq li {
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1em;
+}
+
+.q {
+    padding: 1em;
+    border-left: 10px solid #f2f2f2;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.q:hover, .q:hover .arrow {
+    border-left-color: #dd7700;
+}
+
+.faq p {
+    color: #dd7700;
+    line-height: 1.5em;
+}
+
+.a {
+    overflow: hidden;
+    height: 0;
+    padding: 0 1em;
+    transition: height 0.3s ease;
+}
+
+.a-opened {
+    height: auto;
+    padding: 1em;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow-rotated {
+    transform: rotate(90deg);
+}
