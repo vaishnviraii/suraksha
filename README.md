@@ -1,5 +1,5 @@
 # Suraksha
-A project made for better access to services and security of the residents of Mumbai.
+Welcome to Suraksha, your trusted partner in ensuring safety and security. Our mission is to provide comprehensive and reliable resources for individuals and communities to enhance their safety and well-being.
 
 Developed by:<ul> <li>VAISHNAVI RAI </li>
               <li> DEVASHREE RAHATE</li>
