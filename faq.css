@@ -13,7 +13,7 @@ footer {
     height: 6vh;
     position: absolute;
     top: 0;
-    left: 0;
+    right: 15px;
     padding: 20px;
     display: flex;
     align-items: center;
@@ -134,4 +134,81 @@ td {
 
 table, th, td {
     border: 1.3px solid black;
+}
+/* Contact page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+h1 {
+    text-align: center;
+    color: #dd7700;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    color: #dd7700;
+    font-size: 18px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #dd7900;
+    
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #dd7700;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dd7700;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color:#dd7700;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #dd7700;
 }
