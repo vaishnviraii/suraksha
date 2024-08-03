@@ -108,3 +108,27 @@ footer {
 .arrow-rotated {
     transform: rotate(90deg);
 }
+
+.table {
+    width: 0%;
+    margin: 10px auto;
+    font-family: Arial, sans-serif;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+th {
+    background-color: #f9f9f9;
+    color: #dd7700;
+}
+
+td {
+    background-color: #f9f9f9;
+    color: #dd7700;
+}
+
+table, th, td {
+    border: 1.3px solid black;
+}
