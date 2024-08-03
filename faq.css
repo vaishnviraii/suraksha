@@ -31,6 +31,9 @@ footer {
     display: inline-block;
     padding: 0%;
     margin-left: 20px;
+    text-decoration: 2px solid underline;
+    text-decoration-color:#dd7700 ;
+
 }
 
 .nav li a {
