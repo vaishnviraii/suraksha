@@ -1,0 +1,255 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display';
+}
+body {
+    scroll-behavior: smooth;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(51, 3, 14, 0.164),rgba(64, 60, 4, 0.214));
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+}
+
+
+nav{
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding:20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin:auto;
+    z-index: 2;
+}
+nav .logo{
+    width: 80px;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+}
+nav ul li {
+    list-style: none;
+    margin-left: 100px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    padding-bottom: 10px;
+    word-spacing: 5px;
+}
+
+nav ul li a:after {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom:-40;
+    transition: width 0.5s;
+}
+.content{
+    text-align: center;
+    z-index: 2;
+    position: relative;
+
+}
+.content h1{
+    font-size: 160px;
+    color:#fff;
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 24px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+
+}
+
+.content a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.back-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .back-video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .back-video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+nav ul li a:after{
+   content:"";
+   position: absolute;
+   background-color: #ffffff;
+   height:3px;
+   width:0;
+   left:0;
+   bottom:-10px;
+   transition: 0.5s;
+}
+nav ul li a:hover:after{
+    width:100%;
+}
+.scroll-container {
+    width: 100%; /* Full width of the viewport */
+    overflow-x: auto; /* Enable horizontal scrolling */
+    white-space: nowrap; /* Prevent wrapping to next line */
+    
+    padding: 50px 5%;
+    background-image: linear-gradient(rgba(51, 3, 14, 0.164), rgba(64, 60, 4, 0.214));
+}
+.scroll-content1{
+    display: inline-flex; /* Align boxes horizontally */
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    width: 100%;
+    max-width: 1500px; /* Adjust max-width as needed */
+}
+
+.box {
+    width: 500px; /* Ensures two boxes per row with space in between */
+    height: 400px;
+    background-color: #fff;
+    border: 2px solid #f19102;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-right: 20px; /* Space between the boxes */
+    display: inline-block; /* Ensure boxes are treated as inline elements */
+    vertical-align: top; /* Aligns boxes to the top */
+
+}
+@media (max-width: 768px) {
+    .box {
+        width: 80%; /* Adjust width for smaller screens */
+        height: auto; /* Auto height to fit content */
+    }
+}
+
+.box:hover {
+    transform: translateY(-10px);
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+    border-radius: 10%;
+    margin-top: -5px;
+    margin-left: 180px;
+}
+
+.logo1 img {
+    width: 100%;
+    height: auto;
+}
+
+.content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.content h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.content p {
+    overflow-wrap: break-word; /* Allows long words to break and wrap to the next line */
+    word-wrap: break-word; /* Older syntax for word wrapping */
+    word-break: break-word; /* Breaks long words if necessary */
+    font-size: 18px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.section h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 24px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
