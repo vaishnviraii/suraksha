@@ -8,5 +8,5 @@ Contributors
 
 - Vaishnavi Rai
 - Devashree Rahate
-- Shipra Rhode
+- Shipra Rode
 
