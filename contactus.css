@@ -1,0 +1,392 @@
+* {
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('bg.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(252, 211, 150);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 90%;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.contact-content, .quick-content {
+    width: 45%;
+    padding: 20px;
+    text-align:left;
+    background-color: #f7deaa;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 32px; 
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.footer-content p {
+    width: 100%;
+    margin: 0 auto;
+    padding: 7px;
+    text-align: center;
+    color: #333;
+}
+
+.footer-content ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+}
+
+.list {
+    padding: 0;
+}
+
+.list  {
+    padding: 7px;
+    text-align: center;
+    list-style-type: none;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.list::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    height: 2px;
+    width: 0;
+    background: #f18930;
+    transition: width 0.5s ease;
+}
+
+.list :hover::before {
+    width: 70px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #f18930;
+}
+
+.bottom-bar {
+    background: #f18930;
+    text-align: center;
+    padding: 10px;
+    margin: 0; /* Ensure no margin */
+    border: none;
+    width: 100vw;
+    overflow-y: hidden;
+}
+
+.bottom-bar p {
+    color: #343434;
+    margin: 0;
+    font-size: 17px;
+    padding: 10px;
+}
+
+.nav {
+    overflow-y: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    z-index: 2;
+    border-bottom: 2px solid #dd7700;
+    padding-bottom: 5px;
+    
+}
+.logo{
+    width: 80px;
+    
+}
+
+.nav ul {
+    overflow-y: hidden;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul a {
+    overflow-y: hidden;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 50px;
+    word-spacing: 5px;
+}
+
+.nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px; 
+    bottom: -2px; 
+    background: #dd7700;
+    transition: 0.5s ease;
+}
+
+.nav ul a:hover::after {
+    width: 100%;
+}
+
+.nav header{
+    font-size: 25px;
+    color:#703d03;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-left: -400px;
+}
+.nav header:hover{
+    -webkit-text-stroke: 2px brown;
+    color: orange;
+}
+
+
+.search {
+    width: 100%;
+    height: 80px;
+    background-color: #dd7700;
+    margin: 20px 0 0 0;
+    text-align: center;
+    padding-top: 9px;
+    overflow: hidden; 
+}
+
+
+.search h2 {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    background-color: #dd7700; 
+    margin: 0; 
+    padding: 10px 0; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+
+.nav {
+    overflow-y: hidden;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px;
+    z-index: 2;
+    border-bottom: 2px solid #dd7700;
+    padding-bottom: 5px;
+}
+.logo{
+    width: 80px;
+    
+}
+
+.nav ul {
+    overflow-y: hidden;
+    width: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.nav ul a {
+    overflow-y: hidden;
+    position: relative;
+    font-size: 20px;
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    margin-left: 50px;
+    word-spacing: 5px;
+}
+
+.nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px; 
+    bottom: -2px; 
+    background: #dd7700;
+    transition: 0.5s ease;
+}
+
+.nav ul a:hover::after {
+    width: 100%;
+}
+
+.nav header{
+    font-size: 25px;
+    color:#703d03;
+    font-weight: 600;
+    transition: 0.5s;
+    margin-left: -400px;
+}
+.nav header:hover{
+    -webkit-text-stroke: 2px brown;
+    color: orange;
+}
+
+
+.search {
+    width: 100%;
+    height: 80px;
+    background-color: #dd7700;
+    margin: 120px 0 0 0;
+    text-align: center;
+    padding-top: 9px;
+    overflow: hidden; 
+}
+
+
+.search h2 {
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    background-color: #dd7700; 
+    margin: 0; 
+    padding: 10px 0; 
+    text-align: center;
+    margin-top: 10px;
+}
+
+.s{
+    border-bottom: 2px solid #dd7700;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.contact-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+h1 {
+    text-align: center;
+    color: #dd7700;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    color: #dd7700;
+    font-size: 18px;
+}
+
+.contact-info p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.contact-form {
+    margin-top: 20px;
+}
+
+.contact-form h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #dd7900;
+}
+
+.contact-form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    color: #dd7700;
+    font-size: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dd7700;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #dd7700;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+.contact-form button:hover {
+    background-color: #dd7700;
+}
