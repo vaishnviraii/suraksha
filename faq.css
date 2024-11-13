@@ -10,12 +10,12 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('bg.jpg'); /* Add your image path here */
+    background-image: url('bg.jpg'); 
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    color: #333; /* Adjust color for readability against the background image */
+    color: #333;
 }
 footer {
     width: 100%;
@@ -48,8 +48,8 @@ footer {
 }
 
 h3 {
-    font-size: 32px; /* Larger font size */
-    font-weight: bold; /* Bold text */
+    font-size: 32px; 
+    font-weight: bold;
     text-align: center;
     color: #333;
     margin: 0;
@@ -164,10 +164,10 @@ a:hover {
     position: absolute;
     left: 0;
     width: 0;
-    height: 3px; /* Makes the line thicker */
-    bottom: -2px; /* Adjust this value to control how far below the text the line appears */
+    height: 3px; 
+    bottom: -2px; 
     background: #dd7700;
-    transition: 0.5s ease; /* Smooth transition for width change */
+    transition: 0.5s ease;
 }
 
 .nav ul a:hover::after {
@@ -186,12 +186,12 @@ a:hover {
     color: orange;
 }
 
-/* .des section styling */
+
 .header-container {
     display: flex;
-    align-items: center;  /* Vertically centers the content */
-    justify-content: flex-start; /* Aligns items to the left */
-    gap: 15px; /* Adds space between the logo and the heading */
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 15px; 
     width: 100%;
     margin-top: 100px;
     padding: 20px;
@@ -201,16 +201,16 @@ a:hover {
     font-size: 30px;
     color: #603301;
     padding: 20px 40px;
-    margin: 0 30px 15px 0; /* Margin below the h2 */
+    margin: 0 30px 15px 0;
     text-align: center;
     margin-left: 1px; 
-    width:900px;/* Adjust left margin to align with the logo */
+    width:900px;
 }
 .des h3{
     font-size: 20px;
     color: #603301;
     padding: 20px 0;
-    margin: 0 0 10px 0; /* Margin below the h2 */
+    margin: 0 0 10px 0;
     text-align: center;
     margin-left: 160px;
 
@@ -250,13 +250,9 @@ a:hover {
 }
  .side-image{
     
-    max-width: 80%; /* Set the width you want for the image */
+    max-width: 80%; 
     height: auto;
     margin-left: 10%; 
-    
-    /* Space between text and image */
-   
-    /* Optionally add a border-radius for rounded edges */
     border-radius: 8px;
 }
 
@@ -265,21 +261,21 @@ a:hover {
 .search {
     width: 100%;
     height: 80px;
-    background-color: #dd7700; /* Same background color */
+    background-color: #dd7700;
     margin: 120px 0 0 0;
     text-align: center;
     padding-top: 9px;
-    overflow: hidden; /* Prevent vertical scrolling */
+    overflow: hidden; 
 }
 
-/* Frequently Asked Questions heading styling */
+
 .search h2 {
     font-size: 26px;
     color: white;
     font-weight: bold;
-    background-color: #dd7700; /* Same background color */
-    margin: 0; /* Removes margin around h2 */
-    padding: 10px 0; /* Adds padding inside h2 */
+    background-color: #dd7700; 
+    margin: 0; 
+    padding: 10px 0; 
     text-align: center;
     margin-top: 10px;
 }
