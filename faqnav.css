@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #ff704d; /* Orange theme */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.main-container {
+    padding-top: 150px;
+}
+
+.search-section {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 60%;
+    max-width: 400px;
+    border: 2px solid #ff704d;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #ff704d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-section button:hover {
+    background-color: #e65c41;
+}
+
+/* Services Section */
+.services {
+    position: relative; /* Allows absolute positioning for buttons */
+    padding: 20px 5%;
+    background-image: linear-gradient(rgba(51, 3, 14, 0.164), rgba(64, 60, 4, 0.214));
+    overflow: hidden; /* Hides scrollbars */
+}
+
+.service-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    scroll-snap-type: x mandatory; /* Enables snap scrolling */
+    scroll-behavior: smooth;
+    padding: 20px 0;
+    scrollbar-width: none; /* Hides scrollbar for Firefox */
+}
+
+.service-container::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for Chrome, Edge, and Safari */
+}
+
+.service-card {
+    flex: 0 0 auto; /* Prevent shrinking */
+    width: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease-in-out;
+    scroll-snap-align: start; /* Aligns cards on scroll stop */
+}
+
+.service-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.service-card:hover {
+    transform: scale(1.05); /* Adds hover effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 112, 77, 0.8);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-button.left {
+    left: 0;
+}
+
+.scroll-button.right {
+    right: 0;
+}
+
+.scroll-button:hover {
+    background-color: rgba(230, 92, 65, 0.9);
+}
+
+.footer {
+    text-align: center;
+    background-color: #ff704d;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
