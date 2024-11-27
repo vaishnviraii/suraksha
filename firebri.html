@@ -12,12 +12,12 @@
 </head>
 <body>
     <div class="nav">
-        <img src="C:\Users\rodes\OneDrive\Documents\GitHub\suraksha\logo.png" class="logo">
+        <img src="logo.png" class="logo">
         <header><h2>SURAKSHA</h2></header>
         <ul>
-            <a href="index.html">HOME</a>
+            <a href="indexmain.html">HOME</a>
             <a href="AboutUs.html">ABOUT US</a>
-            <a href="#">FAQ</a>
+            <a href="faqnav.html">FAQ</a>
             <a href="contactUs.html">CONTACT US</a>
         </ul>
     </div>
@@ -51,6 +51,7 @@
 </div>
 
     <div class="search"><h2>FREQUENTLY ASKED QUESTIONS</h2></div>
+    <div id="google_translate_element"></div>
     <div class="faq-section">
         <!-- <H3 class="title">FREQUENTLY ASKED QUESTIONS</H3> -->
         <UL class="faq">
@@ -191,7 +192,7 @@
             <div class="quick-content">
             <h3>Quick Links</h3>
             <ul class="list">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="indexmain.html">Home</a></li>
             <li><a href="AboutUs.html">About</a></li>
             <li><a href="contactUs.html">Contact</a></li>
             </ul>
@@ -202,6 +203,17 @@
                 <p>&copy; 2024 SURAKSHA . All rights reserved</p>
             </div>
           
+
 <script src="faq.js"></script>
+<script src="script.js"></script>
+      <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                {pageLanguage: 'en'},
+                'google_translate_element'
+            );
+        } 
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
